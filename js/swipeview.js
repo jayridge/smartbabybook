@@ -162,6 +162,7 @@ var SwipeView = (function (window, document) {
 		},
 
 		refreshSize: function () {
+                        console.log(this.wrapper, this.wrapper.clientWidth)
 			this.wrapperWidth = this.wrapper.clientWidth;
 			this.wrapperHeight = this.wrapper.clientHeight;
 			this.pageWidth = this.wrapperWidth;
@@ -389,6 +390,7 @@ var SwipeView = (function (window, document) {
 				pageFlipIndex,
 				className;
 
+                        console.log('__checkPosition',this.currentMasterPage, this.directionX)
 			this.masterPages[this.currentMasterPage].className = this.masterPages[this.currentMasterPage].className.replace(/(^|\s)swipeview-active(\s|$)/, '');
 
 			// Flip the page
@@ -399,6 +401,7 @@ var SwipeView = (function (window, document) {
 
 				pageFlip = this.currentMasterPage - 1;
 				pageFlip = pageFlip < 0 ? 2 : pageFlip;
+                                console.log(pageFlip, this.masterPages[pageFlip])
 				this.masterPages[pageFlip].style.left = this.page * 100 - 100 + '%';
 
 				pageFlipIndex = this.page - 1;

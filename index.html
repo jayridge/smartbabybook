@@ -2,92 +2,112 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>Smart BabyBook</title>
 
+  <link href="style.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
   <script src="js/swipeview.js"></script>
-
-  <style>
-    .ui-btn {text-align: left}
-  </style>
+  <script src="js/smartbabybook.js"></script>
 
 </head>
 
 <body>
 
-<div id="main" data-role="page" data-title="Smart Baby Book">
+<div id="main" data-role="page" data-title="Smart Baby Book" class="type-interior">
   
   <div data-role="header">
     <h1>SmartBaby Book</h1>
   </div><!-- /header -->
   
-  <div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-inset="true">
-    <div data-role="collapsible">
-      <h3>Introduction</h3>
-      <p>I'm the collapsible content for section 1</p>
-    </div>
-    <div data-role="collapsible">
-      <h3>Pregnancy and Birth</h3>
-      <p>I'm the collapsible content for section 1</p>
-      <div data-role="controlgroup">
-        <a href="#pregnancy-enjoy" data-icon="edit" data-iconpos="left" data-role="button">Did you enjoy your pregnancy?</a>
-        <a href="#pregnancy-2" data-icon="edit" data-iconpos="left" data-role="button">How was your health?</a>
-        <a href="#pregnancy-3" data-icon="edit" data-iconpos="left" data-role="button">Was pregnancy an anxious time?</a>
-        <a href="#pregnancy-4" data-icon="edit" data-iconpos="left" data-role="button">How was pregnancy for the two of you?</a>
-        <a href="#pregnancy-5" data-icon="edit" data-iconpos="left" data-role="button">Was this a good time in your life to be having a baby?</a>
-        <a href="#pregnancy-6" data-icon="edit" data-iconpos="left" data-role="button">Special Memories of Pregnancy</a>
-      </div>
-    </div>
-    <div data-role="collapsible">
-      <h3>The First Three Months</h3>
-      <p>I'm the collapsible content for section 1</p>
-    </div>
-    <div data-role="collapsible">
-      <h3>Months Four through Six</h3>
-      <p>I'm the collapsible content for section 1</p>
-    </div>
-    <div data-role="collapsible">
-      <h3>Months Seven through Nine</h3>
-      <p>I'm the collapsible content for section 1</p>
-    </div>
-    <div data-role="collapsible">
-      <h3>Ten Months to One Year</h3>
-      <p>I'm the collapsible content for section 1</p>
+  <div data-role="content">
+    <div class="content-primary">  
+      <ul data-role="listview">
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Introduction</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Pregnancy and Birth</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>The First Three Months</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Months Four through Six</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Months Seven through Nine</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Ten Months to One Year</h3></a></li>
+      </ul>
     </div>
   </div>
-
 
   <div data-role="footer" data-position="fixed">
     <h1>Fixed Footer!</h1>
-  </div>
+  </div><!-- /footer -->
+
 </div><!-- /main -->
 
 
-<div data-role="page" id="pregnancy-enjoy">
+<div data-role="page" id="pregnancy">
 
   <div data-role="header">
-    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a><h1>Did you enjoy your pregnancy?</h1>
+    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a><h1>Pregnancy</h1>
+  </div><!-- /header -->
+ 
+  <div data-role="content">
+    <div class="content-primary">
+      <ul data-role="listview">
+        <li><a href="#pregnancy-enjoy"><img src="img/baby.jpg" /><h3>Did you enjoy your pregnancy?</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>How was your health?</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Was pregnancy an anxious time?</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>How was pregnancy for the two of you?</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Was this a good time in your life to be having a baby?</h3></a></li>
+        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Special Memories of Pregnancy</h3></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-role="footer" data-position="fixed">
+    <h1>Fixed Footer!</h1>
+  </div><!-- /footer -->
+
+</div><!-- /pregnancy -->
+
+
+<div class="has-carousel" data-role="page" id="pregnancy-enjoy">
+
+  <div data-role="header">
+    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a><h1>Pregnancy</h1>
   </div><!-- /header -->
 
   <div data-role="content">  
-    <p>It was wonderful, joyous, magical. I loved every minute of it. To be 43 and pregnant felt
-very special I felt like celebraling every day. I'd find myselfsinging as I drove to work
-in the moming! Cecilia, at work. said "You are the happiest pregnant woman I know"
-and I felt like I was. Sometimes I thought, "This is too good to be true." I really felt
-excited about having a baby and felt we had room in our lives for this new additron</p>
+    <div class="content-primary">
+      <div id="wrapper" style="width:100%"></div>
+      <div id="jay" style="width:100%"></div>
+      <div class="carousel">
+        <div class="wrapper"></div>
+        <ul>
+          <li><span><p>It was marvelous. I loved it. I loved getting fat. I loved feeling this huge belly and her kicking and feeling her different bones sticking out—watching her go back and forth. I felt special. I was getting attention. We were trying to get the house finished. We were working on Mary’s room—painting and decorating. It was fun.</p><small>Mary’s mother</small></span></li>
+          <li><span><p>I know some women feel like it was the most special time of their lives. But I didn’t feel that way. I was really happy about being pregnant, but I was miserable being pregnant. I just felt terrible. I was always tired. I could get ten hours of sleep an still be exhausted. And I ached—my muscles ached. I felt like I had the flu all the time.</p><small>Jared’s mother</small></span></li>
+          <li><span><p>I didn’t really enjoy the pregnancy that much. It was a complete turnaround in my life style. All of a sudden I was totally concerned—I gave up drinking, coffee, going out to parties, smoking cigarettes—a lot of things. I stopped working. We didn’t go away anywhere because I just didn’t feel right in traveling. I guess I was being overly cautious about a lot of things.</p><small>Erica’s mother</small></span></li>
+        </ul>
+      </div>
+    </div>
   </div><!-- /content -->
 
   <form>
     <textarea cols="40" rows="40" name="textarea-6" id="textarea-6" placeholder="Your experience"></textarea>
   </form>
   
-  <div data-role="footer">
-    <h4>Page Footer</h4>
+  <div data-role="footer">    
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+      </ul>
+    </div><!-- /navbar -->
   </div><!-- /footer -->
+
 </div><!-- /page two -->
+
 
 </body>
 

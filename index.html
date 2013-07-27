@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
   <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
-  <script src="js/swipeview.js"></script>
   <script src="js/smartbabybook.js"></script>
 
 </head>
@@ -20,9 +19,47 @@
 <body>
 
 <div id="main" data-role="page" data-title="Smart Baby Book" class="type-interior">
-  
+  <div data-role="content">
+    <h1>Smart Baby Book</h1>
+    <p>A new way to journal. Enter your memories, ideas, events and photos to have them synced to your iPhone and iPad using iCould or Dropbox. Has ability to export to PDF, iBooks, etc.</p>
+    <p>
+     Click options to record your baby's name and birth date. Don't worry, you can always do this later by clicking options at the top of the app.
+    <a href="#options" data-role="button" data-icon="gear" data-iconpos="left">Options</a>
+    <a href="#home" data-role="button" data-icon="home" data-iconpos="left">Smart Baby Book</a>
+    </p>
+  </div>
+</div><!-- /main -->
+
+<div id="options" data-role="page" data-title="Smart Baby Book" class="type-interior">
   <div data-role="header">
+    <a href="#home" data-icon="home" class="ui-btn-left">Home</a>
+    <h1>Options</h1>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula facilisis nulla, eu pulvinar nunc malesuada eget. Integer sem velit, pellentesque sit amet sollicitudin vitae, bibendum at libero.</p>
+    <form>
+      <label for="text-basic">Baby Name</label>
+      <input type="text" name="text-basic" id="text-basic" value="">
+      <label for="date">Born</label>
+      <input type="date" name="date" id="date" value="">
+      <div data-role="fieldcontain">
+          <label for="flip-6">Reminders:</label>
+          <select name="flip-6" id="flip-6" data-role="slider">
+              <option value="off">Off</option>
+              <option value="on" selected>On</option>
+          </select>
+      </div>
+    </form>
+    <a href="#home" data-role="button" data-icon="home" data-iconpos="left">Smart Baby Book</a>
+  </div>
+</div><!-- /main -->
+
+<div id="home" data-role="page" data-title="Smart Baby Book" class="type-interior">
+  
+  <div data-role="header" data-position="fixed">
     <h1>SmartBaby Book</h1>
+    <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
   </div><!-- /header -->
   
   <div data-role="content">
@@ -38,17 +75,15 @@
     </div>
   </div>
 
-  <div data-role="footer" data-position="fixed">
-    <h1>Fixed Footer!</h1>
-  </div><!-- /footer -->
-
-</div><!-- /main -->
+</div><!-- /home -->
 
 
 <div data-role="page" id="pregnancy">
 
   <div data-role="header">
-    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a><h1>Pregnancy</h1>
+    <a href="#home" data-icon="home" class="ui-btn-left">Home</a>
+    <h1>Pregnancy</h1>
+    <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
   </div><!-- /header -->
  
   <div data-role="content">
@@ -64,17 +99,42 @@
     </div>
   </div>
 
+</div><!-- /pregnancy -->
+
+
+<div data-role="page" id="pregnancy-enjoy-pics">
+
+  <div data-role="header">
+    <a href="#pregnancy" data-icon="arrow-l" data-iconpos="left">Back</a>
+    <h1>Pregnancy</h1>
+    <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <ul id="pregnancy-piclist"></ul>
+    <a href="#" id="pregnancy-add-pic" data-role="button" data-icon="grid" data-iconpos="left" data-theme="b">Add Picture</a>
+  </div><!-- /content -->
+
   <div data-role="footer" data-position="fixed">
-    <h1>Fixed Footer!</h1>
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pregnancy-enjoy-read" data-icon="bars">Read</a></li>
+        <li><a href="#pregnancy-enjoy-write" data-icon="edit">Write</a></li>
+        <li><a href="#pregnancy-enjoy-pics" data-icon="grid" class="ui-btn-active">Pics</a></li>
+        <li><a href="#pregnancy-enjoy-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
   </div><!-- /footer -->
 
-</div><!-- /pregnancy -->
+</div><!-- /page two -->
 
 
 <div data-role="page" id="pregnancy-enjoy-more">
 
   <div data-role="header">
-    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a><h1>Pregnancy</h1>
+    <a href="#pregnancy" data-icon="arrow-l" data-iconpos="left">Back</a>
+    <h1>Pregnancy</h1>
+    <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
   </div><!-- /header -->
 
   <div data-role="content">
@@ -99,7 +159,9 @@
 <div data-role="page" id="pregnancy-enjoy-write">
 
   <div data-role="header">
-    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a><h1>Pregnancy</h1>
+    <a href="#pregnancy" data-icon="arrow-l" data-iconpos="left">Back</a>
+    <h1>Pregnancy</h1>
+    <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
   </div><!-- /header -->
 
   <div data-role="content" style="margin:0;padding:0">
@@ -125,7 +187,9 @@
 <div data-role="page" id="pregnancy-enjoy-read">
 
   <div data-role="header">
-    <a href="#" data-rel="back" data-role="button" data-icon="arrow-l" data-iconpos="left" data-inline="true">Back</a><h1>Pregnancy</h1>
+    <a href="#pregnancy" data-icon="arrow-l" data-iconpos="left">Back</a>
+    <h1>Pregnancy</h1>
+    <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
   </div><!-- /header -->
 
   <div data-role="content">
@@ -153,7 +217,5 @@
 </div><!-- /page two -->
 
 
-
 </body>
-
 </html>

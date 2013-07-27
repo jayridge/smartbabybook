@@ -3,6 +3,7 @@ html, body {
 }
 body {
   -webkit-user-select:none;
+  background-color: white;
 }
 .ui-btn {
   text-align: left

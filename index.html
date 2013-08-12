@@ -21,6 +21,15 @@
 <div id="main" data-role="page" data-title="Smart Baby Book" class="type-interior">
   <div data-role="content">
     <h1>Smart Baby Book</h1>
+    <a href="#home" data-role="button" data-icon="home" data-iconpos="left">Browse</a>
+    <a href="#chapter-2-1-read" data-role="button" data-icon="edit" data-iconpos="left">Record</a>
+    <a href="#options" data-role="button" data-icon="gear" data-iconpos="left">Options</a>
+  </div>
+</div><!-- /main -->
+
+<div id="nux" data-role="page" data-title="Smart Baby Book" class="type-interior">
+  <div data-role="content">
+    <h1>Smart Baby Book</h1>
     <p>A new way to journal. Enter your memories, ideas, events and photos to have them synced to your iPhone and iPad using iCould or Dropbox. Has ability to export to PDF, iBooks, etc.</p>
     <p>
      Click options to record your baby's name and birth date. Don't worry, you can always do this later by clicking options at the top of the app.
@@ -28,7 +37,7 @@
     <a href="#home" data-role="button" data-icon="home" data-iconpos="left">Smart Baby Book</a>
     </p>
   </div>
-</div><!-- /main -->
+</div><!-- /nux -->
 
 <div id="options" data-role="page" data-title="Smart Baby Book" class="type-interior">
   <div data-role="header">
@@ -58,6 +67,7 @@
 <div id="home" data-role="page" data-title="Smart Baby Book" class="type-interior">
   
   <div data-role="header" data-position="fixed">
+	<a href="#main" data-icon="home" class="ui-btn-left">Home</a>
     <h1>SmartBaby Book</h1>
     <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
   </div><!-- /header -->
@@ -65,23 +75,22 @@
   <div data-role="content">
     <div class="content-primary">  
       <ul data-role="listview">
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Introduction</h3></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Pregnancy and Birth</h3></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>The First Three Months</h3></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Months Four through Six</h3></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Months Seven through Nine</h3></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h3>Ten Months to One Year</h3></a></li>
+        <li><a href="#chapter-2-1-read"><img src="img/baby.jpg" /><h3>Introduction</h3></a></li>
+        <li><a href="#chapter-2-1-read"><img src="img/baby.jpg" /><h3>Pregnancy and Birth</h3></a></li>
+        <li><a href="#chapter-2-1-read"><img src="img/baby.jpg" /><h3>The First Three Months</h3></a></li>
+        <li><a href="#chapter-2-1-read"><img src="img/baby.jpg" /><h3>Months Four through Six</h3></a></li>
+        <li><a href="#chapter-2-1-read"><img src="img/baby.jpg" /><h3>Months Seven through Nine</h3></a></li>
+        <li><a href="#chapter-2-1-read"><img src="img/baby.jpg" /><h3>Ten Months to One Year</h3></a></li>
       </ul>
     </div>
   </div>
 
 </div><!-- /home -->
 
-
 <div data-role="page" id="pregnancy">
 
   <div data-role="header">
-    <a href="#home" data-icon="home" class="ui-btn-left">Home</a>
+    <a href="#home" data-icon="back" class="ui-btn-left">Chapters</a>
     <h1>Pregnancy</h1>
     <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
   </div><!-- /header -->
@@ -89,17 +98,419 @@
   <div data-role="content">
     <div class="content-primary">
       <ul data-role="listview">
-        <li><a href="#pregnancy-enjoy-read"><img src="img/baby.jpg" /><h4>Did you enjoy your pregnancy?</h4></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h4>How was your health?</h4></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h4>Was pregnancy an anxious time?</h4></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h4>How was pregnancy for the two of you?</h4></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h4>Was this a good time in your life to be having a baby?</h4></a></li>
-        <li><a href="#pregnancy"><img src="img/baby.jpg" /><h4>Special Memories of Pregnancy</h4></a></li>
+        <li><a href="#chapter-2-1-read"><img src="img/baby.jpg" /><h4>Did you enjoy your pregnancy?</h4></a></li>
+        <li><a href="#chapter-2-2-read"><img src="img/baby.jpg" /><h4>How was your health?</h4></a></li>
+        <li><a href="#chapter-2-3-read"><img src="img/baby.jpg" /><h4>Was pregnancy an anxious time?</h4></a></li>
+        <li><a href="#chapter-2-4-read"><img src="img/baby.jpg" /><h4>How was pregnancy for the two of you?</h4></a></li>
+        <li><a href="#chapter-2-5-read"><img src="img/baby.jpg" /><h4>Was this a good time in your life to be having a baby?</h4></a></li>
+        <li><a href="#chapter-2-6-read"><img src="img/baby.jpg" /><h4>Special Memories of Pregnancy</h4></a></li>
       </ul>
     </div>
   </div>
 
 </div><!-- /pregnancy -->
+
+
+
+<!-- nav test  -->
+
+
+<!-- chapter-2-1 -->
+
+<div data-role="page" id="chapter-2-1-read">
+
+  <div data-role="header">
+    <a href="#pregnancy" class="ui-btn-left" data-theme="a" data-icon="bars" data-iconpos="left">topics</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-2-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <div class="content-primary">
+      <h3 style="margin-bottom:4px">Did you enjoy your pregnancy?</h3><small><i>1 of 6</i></small>
+        <ul class="xplain-list">
+          <li><span><p><img src="img/baby.jpg" class="photo-left"/>It was marvelous. I loved it. I loved getting fat. I loved feeling this huge belly and her kicking and feeling her different bones sticking out—watching her go back and forth. I felt special. I was getting attention. We were trying to get the house finished. We were working on Mary’s room—painting and decorating. It was fun.</p><small>Mary’s mother</small></span></li>
+          <li><span><p><img src="img/baby.jpg" class="photo-right"/>I know some women feel like it was the most special time of their lives. But I didn’t feel that way. I was really happy about being pregnant, but I was miserable being pregnant. I just felt terrible. I was always tired. I could get ten hours of sleep an still be exhausted. And I ached—my muscles ached. I felt like I had the flu all the time.</p><small>Jared’s mother</small></span></li>
+          <li><span><p><img src="img/baby.jpg" class="photo-left"/>I didn’t really enjoy the pregnancy that much. It was a complete turnaround in my life style. All of a sudden I was totally concerned—I gave up drinking, coffee, going out to parties, smoking cigarettes—a lot of things. I stopped working. We didn’t go away anywhere because I just didn’t feel right in traveling. I guess I was being overly cautious about a lot of things.</p><small>Erica’s mother</small></span></li>
+        </ul>
+    </div>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-1-read" data-icon="bars" class="ui-btn-active ui-state-persist">Read</a></li>
+        <li><a href="#chapter-2-1-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-1-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-1-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-1-write">
+
+  <div data-role="header">
+    <a href="#pregnancy" class="ui-btn-left" data-theme="a" data-icon="bars" data-iconpos="left">topics</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-2-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+	<div class="content-primary">
+	  <h3>Did you enjoy your pregnancy?</h3>
+	</div>    
+    <form>
+      <textarea class="textarea-write" style="margin:0;padding:0:height:100%" rows=34 autofocus></textarea>
+    </form>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-1-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-1-write" data-icon="edit" class="ui-btn-active ui-state-persist">Write</a></li>
+        <li><a href="#chapter-2-1-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-1-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-1-pics">
+
+  <div data-role="header">
+    <a href="#pregnancy" class="ui-btn-left" data-theme="a" data-icon="bars" data-iconpos="left">topics</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-2-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <ul id="pregnancy-piclist"></ul>
+    <a href="#" id="pregnancy-add-pic" data-role="button" data-icon="grid" data-iconpos="left" data-theme="b">Add Picture</a>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-1-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-1-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-1-pics" data-icon="grid" class="ui-btn-active ui-state-persist">Pics</a></li>
+        <li><a href="#chapter-2-1-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-1-more">
+
+  <div data-role="header">
+    <a href="#pregnancy" class="ui-btn-left" data-theme="a" data-icon="bars" data-iconpos="left">topics</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-2-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+	  <h3>Did you enjoy your pregnancy?</h3>
+	<p>Donec non adipiscing metus, non imperdiet nulla. Donec fringilla tellus metus, vel facilisis ligula vulputate nec. Pellentesque tempus purus sed massa congue, quis hendrerit eros rhoncus. Maecenas hendrerit, tellus at facilisis posuere, dolor mauris semper libero, luctus rutrum justo felis et felis.</p>
+	
+    <ul data-role="listview" data-inset="true">
+      <li><a href="http://www.mchlibrary.org/families/frb_pregnancy.html"><p style="font-size:24px;text-wrap:normal;">Questions about pregnancy jrieowjrieow jrioew jrioew jrioejw re?</p><small>http://www.mchlibrary.org/families/frb_pregnancy.html</small></a></li>
+    </ul>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-1-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-1-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-1-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-1-more" data-icon="info" class="ui-btn-active ui-state-persist">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+
+<!-- chapter-2-2 -->
+
+<div data-role="page" id="chapter-2-2-read">
+
+  <div data-role="header">
+    <a href="#chapter-2-1-read" class="ui-btn-left" data-theme="b" data-icon="back" data-iconpos="left">prev</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-3-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <div class="content-primary">
+      <h3 style="margin-bottom:4px">How was your health?</h3><small><i>2 of 6</i></small>
+
+        <ul class="xplain-list">
+          <li><span><p><img src="img/baby.jpg" class="photo-left"/>It was marvelous. I loved it. I loved getting fat. I loved feeling this huge belly and her kicking and feeling her different bones sticking out—watching her go back and forth. I felt special. I was getting attention. We were trying to get the house finished. We were working on Mary’s room—painting and decorating. It was fun.</p><small>Mary’s mother</small></span></li>
+          <li><span><p><img src="img/baby.jpg" class="photo-right"/>I know some women feel like it was the most special time of their lives. But I didn’t feel that way. I was really happy about being pregnant, but I was miserable being pregnant. I just felt terrible. I was always tired. I could get ten hours of sleep an still be exhausted. And I ached—my muscles ached. I felt like I had the flu all the time.</p><small>Jared’s mother</small></span></li>
+          <li><span><p><img src="img/baby.jpg" class="photo-left"/>I didn’t really enjoy the pregnancy that much. It was a complete turnaround in my life style. All of a sudden I was totally concerned—I gave up drinking, coffee, going out to parties, smoking cigarettes—a lot of things. I stopped working. We didn’t go away anywhere because I just didn’t feel right in traveling. I guess I was being overly cautious about a lot of things.</p><small>Erica’s mother</small></span></li>
+        </ul>
+    </div>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-2-read" data-icon="bars" class="ui-btn-active ui-state-persist">Read</a></li>
+        <li><a href="#chapter-2-2-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-2-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-2-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-2-write">
+
+  <div data-role="header">
+    <a href="#chapter-2-1-read" class="ui-btn-left" data-theme="b" data-icon="back" data-iconpos="left">prev</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-3-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+	<div class="content-primary">
+	  <h3>How was your health?</h3>
+	</div>    
+    <form>
+      <textarea class="textarea-write" style="margin:0;padding:0:height:100%" rows=34 autofocus></textarea>
+    </form>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-2-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-2-write" data-icon="edit" class="ui-btn-active ui-state-persist">Write</a></li>
+        <li><a href="#chapter-2-2-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-2-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-2-pics">
+
+  <div data-role="header">
+    <a href="#chapter-2-1-read" class="ui-btn-left" data-theme="b" data-icon="back" data-iconpos="left">prev</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-3-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <ul id="pregnancy-piclist"></ul>
+    <a href="#" id="pregnancy-add-pic" data-role="button" data-icon="grid" data-iconpos="left" data-theme="b">Add Picture</a>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-2-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-2-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-2-pics" data-icon="grid" class="ui-btn-active ui-state-persist">Pics</a></li>
+        <li><a href="#chapter-2-2-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-2-more">
+
+  <div data-role="header">
+    <a href="#chapter-2-1-read" class="ui-btn-left" data-theme="b" data-icon="back" data-iconpos="left">prev</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-3-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+	  <h3>How was your health?</h3>
+	<p>Donec non adipiscing metus, non imperdiet nulla. Donec fringilla tellus metus, vel facilisis ligula vulputate nec. Pellentesque tempus purus sed massa congue, quis hendrerit eros rhoncus. Maecenas hendrerit, tellus at facilisis posuere, dolor mauris semper libero, luctus rutrum justo felis et felis.</p>
+	
+    <ul data-role="listview" data-inset="true">
+      <li><a href="http://www.mchlibrary.org/families/frb_pregnancy.html"><p style="font-size:24px;text-wrap:normal;">Questions about pregnancy jrieowjrieow jrioew jrioew jrioejw re?</p><small>http://www.mchlibrary.org/families/frb_pregnancy.html</small></a></li>
+    </ul>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-2-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-2-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-2-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-2-more" data-icon="info" class="ui-btn-active ui-state-persist">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+
+
+<!-- chapter-2-3 -->
+
+<div data-role="page" id="chapter-2-3-read">
+
+  <div data-role="header">
+    <a href="#chapter-2-2-read" class="ui-btn-left" data-theme="b" data-icon="back" data-iconpos="left">prev</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-4-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <div class="content-primary">
+      <h3 style="margin-bottom:4px">Was pregnancy an anxious time?</h3><small><i>3 of 6</i></small>
+
+        <ul class="xplain-list">
+          <li><span><p><img src="img/baby.jpg" class="photo-left"/>It was marvelous. I loved it. I loved getting fat. I loved feeling this huge belly and her kicking and feeling her different bones sticking out—watching her go back and forth. I felt special. I was getting attention. We were trying to get the house finished. We were working on Mary’s room—painting and decorating. It was fun.</p><small>Mary’s mother</small></span></li>
+          <li><span><p><img src="img/baby.jpg" class="photo-right"/>I know some women feel like it was the most special time of their lives. But I didn’t feel that way. I was really happy about being pregnant, but I was miserable being pregnant. I just felt terrible. I was always tired. I could get ten hours of sleep an still be exhausted. And I ached—my muscles ached. I felt like I had the flu all the time.</p><small>Jared’s mother</small></span></li>
+          <li><span><p><img src="img/baby.jpg" class="photo-left"/>I didn’t really enjoy the pregnancy that much. It was a complete turnaround in my life style. All of a sudden I was totally concerned—I gave up drinking, coffee, going out to parties, smoking cigarettes—a lot of things. I stopped working. We didn’t go away anywhere because I just didn’t feel right in traveling. I guess I was being overly cautious about a lot of things.</p><small>Erica’s mother</small></span></li>
+        </ul>
+    </div>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-3-read" data-icon="bars" class="ui-btn-active ui-state-persist">Read</a></li>
+        <li><a href="#chapter-2-3-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-3-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-3-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-3-write">
+
+  <div data-role="header">
+    <a href="#chapter-2-2-read" class="ui-btn-left" data-theme="b" data-icon="back" data-iconpos="left">prev</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-4-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+	<div class="content-primary">
+	  <h3>Was pregnancy an anxious time?</h3>
+	</div>    
+    <form>
+      <textarea class="textarea-write" style="margin:0;padding:0:height:100%" rows=34 autofocus></textarea>
+    </form>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-3-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-3-write" data-icon="edit" class="ui-btn-active ui-state-persist">Write</a></li>
+        <li><a href="#chapter-2-3-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-3-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-3-pics">
+
+  <div data-role="header">
+    <a href="#chapter-2-2-read" class="ui-btn-left" data-theme="b" data-icon="back" data-iconpos="left">prev</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-4-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <ul id="pregnancy-piclist"></ul>
+    <a href="#" id="pregnancy-add-pic" data-role="button" data-icon="grid" data-iconpos="left" data-theme="b">Add Picture</a>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-3-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-3-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-3-pics" data-icon="grid" class="ui-btn-active ui-state-persist">Pics</a></li>
+        <li><a href="#chapter-2-3-more" data-icon="info">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+<div data-role="page" id="chapter-2-3-more">
+
+  <div data-role="header">
+    <a href="#chapter-2-2-read" class="ui-btn-left" data-theme="b" data-icon="back" data-iconpos="left">prev</a>
+    <h1>Pregnancy</h1>
+    <a href="#chapter-2-4-read" class="ui-btn-right" data-theme="b" data-icon="forward" data-iconpos="right">next</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+	  <h3>Was pregnancy an anxious time?</h3>
+	<p>Donec non adipiscing metus, non imperdiet nulla. Donec fringilla tellus metus, vel facilisis ligula vulputate nec. Pellentesque tempus purus sed massa congue, quis hendrerit eros rhoncus. Maecenas hendrerit, tellus at facilisis posuere, dolor mauris semper libero, luctus rutrum justo felis et felis.</p>
+	
+    <ul data-role="listview" data-inset="true">
+      <li><a href="http://www.mchlibrary.org/families/frb_pregnancy.html"><p style="font-size:24px;text-wrap:normal;">Questions about pregnancy jrieowjrieow jrioew jrioew jrioejw re?</p><small>http://www.mchlibrary.org/families/frb_pregnancy.html</small></a></li>
+    </ul>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#main" data-icon="home">Home</a></li>
+        <li><a href="#chapter-2-3-read" data-icon="bars">Read</a></li>
+        <li><a href="#chapter-2-3-write" data-icon="edit">Write</a></li>
+        <li><a href="#chapter-2-3-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#chapter-2-3-more" data-icon="info" class="ui-btn-active ui-state-persist">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div data-role="page" id="pregnancy-enjoy-pics">
@@ -129,7 +540,7 @@
 </div><!-- /page two -->
 
 
-<div data-role="page" id="pregnancy-enjoy-more">
+<div data-role="page" id="pregnancy-read">
 
   <div data-role="header">
     <a href="#pregnancy" data-icon="arrow-l" data-iconpos="left">Back</a>
@@ -138,18 +549,23 @@
   </div><!-- /header -->
 
   <div data-role="content">
-    <ul data-role="listview">
-      <li><a href="http://www.mchlibrary.org/families/frb_pregnancy.html"><p style="font-size:24px;text-wrap:normal;">Questions about pregnancy jrieowjrieow jrioew jrioew jrioejw re?</p><small>http://www.mchlibrary.org/families/frb_pregnancy.html</small></a></li>
-    </ul>
+    <div class="content-primary">
+      <h3>Did you enjoy your pregnancy?</h3>
+        <ul class="xplain-list">
+          <li><span><p><img src="img/baby.jpg" class="photo-left"/>It was marvelous. I loved it. I loved getting fat. I loved feeling this huge belly and her kicking and feeling her different bones sticking out—watching her go back and forth. I felt special. I was getting attention. We were trying to get the house finished. We were working on Mary’s room—painting and decorating. It was fun.</p><small>Mary’s mother</small></span></li>
+          <li><span><p><img src="img/baby.jpg" class="photo-right"/>I know some women feel like it was the most special time of their lives. But I didn’t feel that way. I was really happy about being pregnant, but I was miserable being pregnant. I just felt terrible. I was always tired. I could get ten hours of sleep an still be exhausted. And I ached—my muscles ached. I felt like I had the flu all the time.</p><small>Jared’s mother</small></span></li>
+          <li><span><p><img src="img/baby.jpg" class="photo-left"/>I didn’t really enjoy the pregnancy that much. It was a complete turnaround in my life style. All of a sudden I was totally concerned—I gave up drinking, coffee, going out to parties, smoking cigarettes—a lot of things. I stopped working. We didn’t go away anywhere because I just didn’t feel right in traveling. I guess I was being overly cautious about a lot of things.</p><small>Erica’s mother</small></span></li>
+        </ul>
+    </div>
   </div><!-- /content -->
 
   <div data-role="footer" data-position="fixed">
     <div data-role="navbar">
       <ul>
-        <li><a href="#pregnancy-enjoy-read" data-icon="bars">Read</a></li>
+        <li><a href="#pregnancy-enjoy-read" data-icon="bars" class="ui-btn-active">Read</a></li>
         <li><a href="#pregnancy-enjoy-write" data-icon="edit">Write</a></li>
         <li><a href="#pregnancy-enjoy-pics" data-icon="grid">Pics</a></li>
-        <li><a href="#pregnancy-enjoy-more" data-icon="info" class="ui-btn-active">More</a></li>
+        <li><a href="#pregnancy-enjoy-more" data-icon="info">More</a></li>
       </ul>
     </div><!-- /navbar -->
   </div><!-- /footer -->
@@ -182,6 +598,34 @@
   </div><!-- /footer -->
 
 </div><!-- /page two -->
+
+<div data-role="page" id="pregnancy-enjoy-more">
+
+  <div data-role="header">
+    <a href="#pregnancy" data-icon="arrow-l" data-iconpos="left">Back</a>
+    <h1>Pregnancy</h1>
+    <a href="#options" data-icon="gear" class="ui-btn-right">Options</a>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <ul data-role="listview">
+      <li><a href="http://www.mchlibrary.org/families/frb_pregnancy.html"><p style="font-size:24px;text-wrap:normal;">Questions about pregnancy jrieowjrieow jrioew jrioew jrioejw re?</p><small>http://www.mchlibrary.org/families/frb_pregnancy.html</small></a></li>
+    </ul>
+  </div><!-- /content -->
+
+  <div data-role="footer" data-position="fixed">
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#pregnancy-enjoy-read" data-icon="bars">Read</a></li>
+        <li><a href="#pregnancy-enjoy-write" data-icon="edit">Write</a></li>
+        <li><a href="#pregnancy-enjoy-pics" data-icon="grid">Pics</a></li>
+        <li><a href="#pregnancy-enjoy-more" data-icon="info" class="ui-btn-active">More</a></li>
+      </ul>
+    </div><!-- /navbar -->
+  </div><!-- /footer -->
+
+</div><!-- /page two -->
+
 
 
 <div data-role="page" id="pregnancy-enjoy-read">
